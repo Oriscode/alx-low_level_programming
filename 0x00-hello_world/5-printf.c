@@ -1,2 +1,2 @@
 #include <stdio.h>
-int main(){ printf("i am a boy.\n"); return0;}
+int main(){ printf("with proper grammar, but the outcome is a piece of art,\n"); return 0;}
