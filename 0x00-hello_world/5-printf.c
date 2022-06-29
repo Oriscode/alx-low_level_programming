@@ -1,12 +1,8 @@
 #include <stdio.h>
 /**
- *
- * main - Entry point 
- *
- * Description: 'the program's description'
- *
- * Return: Always 0 (Success)
- *
+ * main entry point
+ * Description: A program to print on the output
+ * Return: Always 0 (success)
  */
 int main(void)
 {
