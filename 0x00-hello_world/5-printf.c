@@ -1,4 +1,3 @@
-/* Description: header */
 #include <stdio.h>
 /**
  * main entry point
@@ -7,7 +6,6 @@
  */
 int main(void)
 {
-	/* Description: short description */
-	printf("with proper grammar, but the outcome is a piece of art,\n");
+	printf("with proper grammar, but the outcome is a piece of art,");
 	return (0);
 }
