@@ -1,21 +1,17 @@
 #include <stdio.h>
 /**
- * main 
+ * main - entry point
  *
- * Description: print size of variables on scree
+ * Description: program to display size of variables on 64
  *
- * Return: return (0)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
-	int intType;
-	float floatType;
-	char charType;
-
-	printf("Size of a char: %zu bytes\n", sizeof(char));
-	printf("Size of an int: %zu bytes\n", sizeof(int));
-	printf("Size of a long int: %zu byte\n", sizeof(long int));
-	printf("Size of a long long int: %zu byte\n", sizeof(long long int));
-	printf("Size of a float: %zu bytes\n", sizeof(float));
+	printf("%s%lu\n", "Size of a char: ", sizeof(char), " byte(s)");
+	printf("%s%lu\n", "Size of an int: ", sizeof(int), " byte(s)");
+	printf("%s%lu\n", "Size of a long int: ", sizeof(long), " byte(s)");
+	printf("%s%lu\n", "Size of a long long int: ", sizeof(long long), " byte(s)");
+	printf("%s%lu\n", "Size of a float: ", sizeof(float), " byte(s)");
 	return (0);
 }
