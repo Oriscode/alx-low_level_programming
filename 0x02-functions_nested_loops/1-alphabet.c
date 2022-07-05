@@ -2,9 +2,9 @@
 /**
  * main - entry point
  *
- * Description - printing alphabet in lower case
+ * Description: printing alphabet in lower case
  *
- * Return: alway(0)
+ * Return: alway(0) Success
  */
 void print_alphabet(void)
 {
