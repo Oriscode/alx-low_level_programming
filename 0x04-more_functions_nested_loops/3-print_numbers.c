@@ -5,7 +5,7 @@
 void print_numbers(void)
 {
 	int ii = 0;
-	
+
 	do {
 		_putchar(ii + '0');
 		ii++;
