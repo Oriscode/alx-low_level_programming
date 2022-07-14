@@ -1,35 +1,43 @@
 #include "main.h"
+
 /**
- * cap_string - capitalizes all words of a string
- * @str: The string
- *
- * Return: The string
+ * *cap_string - capitalize words
+ * @str: pointer
+ * Return: capitalzied string
  */
+
 char *cap_string(char *str)
 {
-	int i, j;
-	int hasWord;
-	char separators[] = ",;.!?(){}\n\t\" ";
+	char sep[] = ",\t;\n; .!?\"(){}";
+	int flag, i, ii;
 
-	for (i = 0, hasWord = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[0] >= 'a' && str[0] <= 'z')
-			hasWord = 1;
-		for (j = 0; separators[j] != '\0'; j++)
+		flag = 0;
+
+		if (i == 0)
 		{
-			if (separators[j] == str[i])
-				hasWord = 1;
+			flag = 1;
 		}
-		if (hasWord)
+		else
 		{
-			if (str[i] >= 'a' && str[i] <= 'z')
+			for (ii = 0; sep[ii] != '\0'; ii++)
+			{
+				if (str[i - 1] == sep[ii])
+				{
+					flag = 1;
+					break;
+				}
+			}
+		}
+
+		if (flag == 1)
+		{
+			if (str[i] <= 'z' && str[i] >= 'a')
 			{
 				str[i] -= ('a' - 'A');
-				hasWord = 0;
 			}
-			else if (str[i] >= 'A' && str[i] <= 'Z')
-				hasWord = 0;
-			else if (str[i] >= '0' && str[i] <= '9')
-				hasWord = 0;
 		}
 	}
+	return (str);
+}
