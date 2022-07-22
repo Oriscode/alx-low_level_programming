@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
  * _strncat - Concatenates two strings.
- *
  * @dest: Destination string
- *
  * @src: Source string
  * @n: Number of bytes to use from src
+ *
  * Return: A pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -19,5 +19,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[destLen] = src[i];
 	}
+
 	return (dest);
 }
