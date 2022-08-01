@@ -6,7 +6,7 @@
  * @age: integer properties of dog
  * @owner: string properties of dog
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float *age;
