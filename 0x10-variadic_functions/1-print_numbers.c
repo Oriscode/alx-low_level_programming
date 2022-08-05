@@ -3,24 +3,24 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - prints numbers, followed by a new line.
+ * print_numbers - function name
  *
- * @separator: the string to be printed between numbers
- * @n: count of parameters
+ * @separator: string received between nums
+ * @n: total number of argument received
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	va_list list;
+	va_list args;
 
-	va_start(list, n);
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(list, int));
+		printf("%d", va_arg(args, int));
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
 
-	va_end(list);
+	va_end(args);
 }
